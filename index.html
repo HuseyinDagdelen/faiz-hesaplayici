@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bileşik Faiz Hesaplayıcı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bileşik Faiz Hesaplayıcı</h1>
+    <form id="faizFormu">
+  <label for="anaPara">Anapara (₺):</label>
+  <input type="text" id="anaPara" placeholder="Örn: 1.000,50" required />
+
+  <label for="faizOrani">Günlük Faiz Oranı (%):</label>
+  <input type="text" id="faizOrani" placeholder="Örn: 0,11" required />
+
+  <label for="gunSayisi">Gün Sayısı:</label>
+  <input type="number" id="gunSayisi" min="1" step="1" placeholder="Tam sayı giriniz" required />
+
+  <button type="submit">Hesapla</button>
+  <button type="button" id="resetBtn">Temizle</button>
+</form>
+
+<div id="sonuc"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
